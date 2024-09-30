@@ -1,16 +1,26 @@
 [
   {
-    "id": 1
+    "id": 2,
+    "name": "Theodore",
+    "description": "This is a second item",
+    "price": 89.99
   },
   {
-    "id": 2
+    "id": 3,
+    "name": "John",
+    "description": "Using postman, I updated this item with the 'PUT' function",
+    "price": 89.99
   },
   {
-    "name": "hello",
-    "id": 3
+    "id": 4,
+    "name": "Caleb",
+    "description": "This is a new item",
+    "price": 50.99
   },
   {
-    "another item": 100,
-    "id": 4
+    "id": 5,
+    "name": "Theodore",
+    "description": "This first Item was posted using postman",
+    "price": 2000
   }
 ]
