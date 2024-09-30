@@ -1,11 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Theodore",
-    "description": "This is a second item",
-    "price": 89.99
-  },
-  {
     "id": 3,
     "name": "John",
     "description": "Using postman, I updated this item with the 'PUT' function",
@@ -22,5 +16,11 @@
     "name": "Theodore",
     "description": "This first Item was posted using postman",
     "price": 2000
+  },
+  {
+    "name": "Jaleel",
+    "description": "This extra Item was posted using postman",
+    "price": 10,
+    "id": 6
   }
 ]

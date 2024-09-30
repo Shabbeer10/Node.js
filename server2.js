@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
   // Extract key-value pair from query parameters
   const query = parsedUrl.query;
   const key = Object.keys(query)[0];  // e.g., 'name', 'id', 'username'
-  const value = query[key];           // e.g., 'John', '3'
+  const value = parseInt(query[key]);           // e.g., 'John', '3'
 
   // Handle GET /items
   if (path === '/items' && method === 'GET') {

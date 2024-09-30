@@ -1,3 +1,5 @@
+/* callback --------------------------------------------------------------------
+
 // synchronous function
 function fetchData (callback){
     setTimeout(()=>{
@@ -9,3 +11,68 @@ function fetchData (callback){
 fetchData(data => {
     console.log(data); // Outputs: Sample Data after 1 second
 });
+*/
+
+/*
+// Promise -------------------------------------------------------------------
+
+function fetchData() {
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=>{
+            const data = "This is sample data";
+            resolve(data);
+            // Or reject("Error message") in case of an error
+        }, 1000);
+    });
+}
+
+fetchData()
+    .then(data => {
+        console.log(data); // Outputs: Sample Data after 1 second
+    })
+    .catch(error=>{
+        console.error(error);
+    });
+*/
+
+/*
+// Async/Await ------------------------------------------------------
+
+async function fetchData() {
+    return new Promise((resolve,reject) => {
+        setTimeout(()=>{
+            const data = "this is sample data";
+            resolve(data);
+        }, 500);
+    });
+}
+
+async function displayData() {
+    try{
+        const data = await fetchData();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+displayData();
+*/
+
+/*
+// Fetching Data from an API ---------------------------------------------
+
+async function getUserData(userId){
+    try{
+        const response = await fetch(`https://127.0.0.1:3000/items/id=4`);
+        if (!response.ok) throw new Error("Network response was not okay");
+        const user = await response.json();
+        console.log(user);
+    } catch (error){
+        console.error("Fetching user data has failed:", error);
+    }
+}
+
+getUserData(1);
+*/
+
