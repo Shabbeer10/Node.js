@@ -1,26 +1,66 @@
 [
   {
-    "id": 3,
-    "name": "John",
-    "description": "Using postman, I updated this item with the 'PUT' function",
-    "price": 89.99
+    "id": 7,
+    "name": "Bradwill",
+    "description": "This item is a perfect gift for any occasion.",
+    "price": 29.99
   },
   {
-    "id": 4,
-    "name": "Caleb",
-    "description": "This is a new item",
-    "price": 50.99
+    "id": 8,
+    "name": "Liam",
+    "description": "An essential item for your daily needs.",
+    "price": 15.75
   },
   {
-    "id": 5,
-    "name": "Theodore",
-    "description": "This first Item was posted using postman",
-    "price": 2000
+    "id": 9,
+    "name": "Brandon",
+    "description": "This item is a must-have for tech enthusiasts.",
+    "price": 99.99
   },
   {
+    "id": 10,
+    "name": "Shu'aib",
+    "description": "Great for home decoration and ambiance.",
+    "price": 45
+  },
+  {
+    "id": 11,
+    "name": "Shadly",
+    "description": "Perfect for outdoor adventures.",
+    "price": 120.5
+  },
+  {
+    "id": 12,
+    "name": "Mulalo",
+    "description": "Stylish and comfortable for everyday wear.",
+    "price": 65
+  },
+  {
+    "id": 13,
+    "name": "Omphile",
+    "description": "Ideal for fitness and health enthusiasts.",
+    "price": 35.75
+  },
+  {
+    "id": 14,
+    "name": "Yusri",
+    "description": "A delightful treat for chocolate lovers.",
+    "price": 10.99
+  },
+  {
+    "id": 15,
+    "name": "Aphiwe",
+    "description": "Great for enhancing your kitchen experience.",
+    "price": 55
+  },
+  {
+    "id": 16,
     "name": "Jaleel",
-    "description": "This extra Item was posted using postman",
-    "price": 10,
-    "id": 6
+    "description": "A fantastic product for eco-conscious consumers.",
+    "price": 22.5
+  },
+  {
+    "query": "\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ",
+    "id": 17
   }
 ]

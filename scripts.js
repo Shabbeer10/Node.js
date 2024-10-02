@@ -75,7 +75,7 @@ async function getUserData(userId){
 
 getUserData(1);
 */
-
+/*
 let p = new Promise((resolve,reject) => {
     let a = 1+1
     if (a == 2) {
@@ -92,3 +92,5 @@ p.then((message)=>{
 .catch((message)=> {
     console.log("this is in the catch"+ message)
 })
+    */
+
