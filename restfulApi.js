@@ -65,7 +65,7 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
       const newItem = JSON.parse(body);
       const items = readDataFromFile();
-      // Add 1 to ID with a value greater than the last item's ID
+      // Add 1 to ID with a value greater than the last item's ID, else ID is 1
       newItem.id = items.length ? items[items.length - 1].id + 1 : 1;
       items.push(newItem);
       writeDataToFile(items);
@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
   // DELETE Method
   } else if (path === '/items' && method === 'DELETE' && key && value) {
     const items = readDataFromFile();
-    // Remove items with matching key-value
+    // Remove items with key-value by making new array excluding targeted items
     const filteredItems = items.filter(item => item[key] !== value); 
     if (items.length !== filteredItems.length) {
       writeDataToFile(filteredItems);
