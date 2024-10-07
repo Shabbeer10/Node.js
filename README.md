@@ -15,3 +15,4 @@ Application hosting:
     Many applications are hosted on servers rather than running on individual devices. These servers provide the necessary computing power and resources to run applications like online games, productivity suites and collaborative tools.
 
 Types Of Servers
+
